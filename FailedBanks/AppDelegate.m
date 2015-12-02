@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "FailedBankDatabase.h"
+#import "FailedBankInfo.h"
+#import "FailedBanksListViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +19,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    FailedBanksListViewController *vc = [[FailedBanksListViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    [self.window setRootViewController:nav];
+    
     return YES;
 }
 

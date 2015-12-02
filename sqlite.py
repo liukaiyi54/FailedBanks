@@ -20,14 +20,36 @@ def mysplit(string):
 			current += char
 	retval.append(current)
 	return retval
-
+# Read lines from file, skipping first line
 data = open("banklist.csv", "r").readlines()[1:]
 for entry in data:
+	# Parse values
 	vals = mysplit(entry.strip())
+	# Convert dates to sqlite3 standard format
 	vals[4] = datetime.strptime(vals[4], "%d-%b-%y")
 	vals[5] = datetime.strptime(vals[5], "%d-%b-%y")
+	# Insert the row
 	print "Inserting %s..." % (vals[0])
 	sql = "insert into failed_banks values(NULL, ?, ?, ?, ?, ?, ?)"
 	c.execute(sql, vals)
 
 conn.commit()
+# Get failed banks by year
+c.execute("select strftime('%Y', close_date), count(*) from failed_banks group by 1;")
+years = []
+failed_banks = []
+for row in c:
+	years.append(row[0])
+	failed_banks.append(row[1])
+# Plot the data
+import matplotlib.pyplot as plt
+import numpy.numarray as na 
+
+values = tuple(failed_banks)
+ind = na.array(range(len(values))) + 0.5
+width = 0.35
+plt.bar(ind, values, width, color = 'r')
+plt.ylabel('Number of failed banks')
+plt.title('Failed banks by year')
+plt.xticks(ind+width/2, tuple(years))
+plt.show()
