@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FailedBanksDetailViewController.h"
 
 @interface FailedBanksListViewController : UITableViewController
 

@@ -18,6 +18,9 @@
 		4CA3961F1C0D7AFD00CFC0E4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA3961E1C0D7AFD00CFC0E4 /* libsqlite3.dylib */; };
 		4CA396271C0D94EF00CFC0E4 /* banklist.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CA396261C0D94EF00CFC0E4 /* banklist.sqlite3 */; };
 		4CA3962A1C0D98CF00CFC0E4 /* FailedBanksListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA396291C0D98CF00CFC0E4 /* FailedBanksListViewController.m */; };
+		4CA3962D1C0E8C7500CFC0E4 /* FailedBankDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3962C1C0E8C7500CFC0E4 /* FailedBankDetails.m */; };
+		4CA396311C0E940200CFC0E4 /* FailedBanksDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3962F1C0E940200CFC0E4 /* FailedBanksDetailViewController.m */; };
+		4CA396321C0E940200CFC0E4 /* FailedBanksDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CA396301C0E940200CFC0E4 /* FailedBanksDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,11 @@
 		4CA396261C0D94EF00CFC0E4 /* banklist.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = banklist.sqlite3; sourceTree = "<group>"; };
 		4CA396281C0D98CF00CFC0E4 /* FailedBanksListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailedBanksListViewController.h; sourceTree = "<group>"; };
 		4CA396291C0D98CF00CFC0E4 /* FailedBanksListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailedBanksListViewController.m; sourceTree = "<group>"; };
+		4CA3962B1C0E8C7500CFC0E4 /* FailedBankDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailedBankDetails.h; sourceTree = "<group>"; };
+		4CA3962C1C0E8C7500CFC0E4 /* FailedBankDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailedBankDetails.m; sourceTree = "<group>"; };
+		4CA3962E1C0E940200CFC0E4 /* FailedBanksDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailedBanksDetailViewController.h; sourceTree = "<group>"; };
+		4CA3962F1C0E940200CFC0E4 /* FailedBanksDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailedBanksDetailViewController.m; sourceTree = "<group>"; };
+		4CA396301C0E940200CFC0E4 /* FailedBanksDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FailedBanksDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,11 @@
 				4CA3961C1C0D7AB900CFC0E4 /* FailedBankDatabase.m */,
 				4CA396281C0D98CF00CFC0E4 /* FailedBanksListViewController.h */,
 				4CA396291C0D98CF00CFC0E4 /* FailedBanksListViewController.m */,
+				4CA3962B1C0E8C7500CFC0E4 /* FailedBankDetails.h */,
+				4CA3962C1C0E8C7500CFC0E4 /* FailedBankDetails.m */,
+				4CA3962E1C0E940200CFC0E4 /* FailedBanksDetailViewController.h */,
+				4CA3962F1C0E940200CFC0E4 /* FailedBanksDetailViewController.m */,
+				4CA396301C0E940200CFC0E4 /* FailedBanksDetailViewController.xib */,
 				4CA396041C0BF4A400CFC0E4 /* Main.storyboard */,
 				4CA396071C0BF4A400CFC0E4 /* Assets.xcassets */,
 				4CA396091C0BF4A400CFC0E4 /* LaunchScreen.storyboard */,
@@ -162,6 +175,7 @@
 				4CA396081C0BF4A400CFC0E4 /* Assets.xcassets in Resources */,
 				4CA396061C0BF4A400CFC0E4 /* Main.storyboard in Resources */,
 				4CA396271C0D94EF00CFC0E4 /* banklist.sqlite3 in Resources */,
+				4CA396321C0E940200CFC0E4 /* FailedBanksDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +191,8 @@
 				4CA3961A1C0D79D000CFC0E4 /* FailedBankInfo.m in Sources */,
 				4CA396171C0BF50600CFC0E4 /* ViewController.m in Sources */,
 				4CA396001C0BF4A400CFC0E4 /* AppDelegate.m in Sources */,
+				4CA3962D1C0E8C7500CFC0E4 /* FailedBankDetails.m in Sources */,
+				4CA396311C0E940200CFC0E4 /* FailedBanksDetailViewController.m in Sources */,
 				4CA395FD1C0BF4A400CFC0E4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

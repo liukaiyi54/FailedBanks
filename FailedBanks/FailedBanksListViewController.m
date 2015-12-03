@@ -49,4 +49,12 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    FailedBanksDetailViewController *vc = [[FailedBanksDetailViewController alloc] init];
+    FailedBankInfo *info = [_failedBankInfos objectAtIndex:indexPath.row];
+    vc.uniqueId = info.uniqueId;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 @end
